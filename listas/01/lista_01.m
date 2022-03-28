@@ -77,3 +77,39 @@
 
 % -----------------------------------------------------------------
 % Exercício 05
+
+% O símbolo ' % ' significa que o que tiver após ele será um comentário. Ou seja, não será compilado no código.
+
+% ' who ' apresenta todas as variáveis que foram criadas até o momento.
+
+% ' whos ' apresenta todas as variáveis que foram criadas até o momento, mas com alguns detalhes a mais: nome, tamanho, bytes e classe.
+
+% ' clear ' deleta todas as variáveis criadas
+
+% ' clear a ' deleta apenas a variavel chamada 'a'
+
+% ' clc ' limpa a tela
+
+% ' close 3 ' fecha a terceira imagem aberta
+ 
+% ' close all ' fecha todas as imagens
+
+
+% -----------------------------------------------------------------
+% Exercício 06
+
+% p_1 = [1 1 -6]
+% r_1 = roots(p_1)
+
+% p_2 = [1 -2 -3 -6]
+% r_2 = roots(p_2)
+
+% p_3 = [1 0 4 0 -2 1]
+% r_3 = roots(p_3)
+
+% p_4 = [1 0 0 0 0 0 2]
+% r_4 = roots(p_4)
+
+
+% -----------------------------------------------------------------
+% Exercício 07
