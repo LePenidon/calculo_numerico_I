@@ -1,0 +1,15 @@
+# Created by Octave 6.2.0, Mon Mar 28 17:18:58 2022 -03 <penido@penidodesk>
+# name: x
+# type: matrix
+# rows: 1
+# columns: 5
+ -55 -25 5 35 65
+
+
+# name: y
+# type: matrix
+# rows: 1
+# columns: 5
+ -3.25 -3.2000000000000002 -3.02 -3.3199999999999998 -3.1000000000000001
+
+

@@ -113,3 +113,44 @@
 
 % -----------------------------------------------------------------
 % Exercício 07
+
+% x = [-55 -25 5 35 65];
+% y = [-3.25 -3.2 -3.02 -3.32 -3.1];
+
+% save dados.mat x y 
+
+% % ao usar o comando ' clear all ', todas as variaveis ja criadas foram apagadas. Mas, quando demos ' load ' nos dados salvos, as variaveis 'x' e 'y' voltaram.
+
+% c = polyfit(x,y,4)
+
+% % plot(x,c);
+% % plot(y,c);
+
+% p = linspace(-70,70,100);
+% p = p';
+
+% yy = sin(p);
+
+% f = polyval(c,p);
+
+% plot(p,yy, 'o', f, '-');
+
+
+% -----------------------------------------------------------------
+% Exercício 08
+
+% z1 = 3 - 2*i
+% [theta_z1, rho_z1] = cart2pol(real(z1), imag(z1))
+
+% z2 = -i;
+% [theta_z2, rho_z2] = cart2pol(real(z2), imag(z2))
+
+% z3 = -2;
+% [theta_z3, rho_z3] = cart2pol(real(z3), imag(z3))
+
+% z4 = log(e)+ log(2)*i;
+% [theta_z4, rho_z4] = cart2pol(real(z4), imag(z4))
+
+
+% -----------------------------------------------------------------
+% Exercício 09
