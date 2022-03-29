@@ -114,26 +114,26 @@
 % -----------------------------------------------------------------
 % Exercício 07
 
-% x = [-55 -25 5 35 65];
-% y = [-3.25 -3.2 -3.02 -3.32 -3.1];
+x = [-55 -25 5 35 65];
+y = [-3.25 -3.2 -3.02 -3.32 -3.1];
 
-% save dados.mat x y 
+save dados.mat x y 
 
-% % ao usar o comando ' clear all ', todas as variaveis ja criadas foram apagadas. Mas, quando demos ' load ' nos dados salvos, as variaveis 'x' e 'y' voltaram.
+% ao usar o comando ' clear all ', todas as variaveis ja criadas foram apagadas. Mas, quando demos ' load ' nos dados salvos, as variaveis 'x' e 'y' voltaram.
 
-% c = polyfit(x,y,4)
+c = polyfit(x,y,4)
 
-% % plot(x,c);
-% % plot(y,c);
+% plot(x,c);
+% plot(y,c);
 
-% p = linspace(-70,70,100);
-% p = p';
+p = linspace(-70,70,100);
+p = p';
 
-% yy = sin(p);
+yy = sin(p);
 
-% f = polyval(c,p);
+f = polyval(c,p);
 
-% plot(p,yy, 'o', f, '-');
+plot(p,yy, 'o', f, '-');
 
 
 % -----------------------------------------------------------------
@@ -382,3 +382,10 @@
 
 % -----------------------------------------------------------------
 % Exercício 20
+
+% t = 1797:2007;
+
+% P = 187273000./(1 + e.^(0.0313*(t.-1913.25)));
+% P_2027 = 187273000/(1 + e^(0.0313*(2027-1913.25))); % 5.1767e+06
+
+% bar(t,P)
