@@ -303,24 +303,81 @@
 % zlabel('eixo z'); % legenda no eixo z
 % title('a)'); % título do gráfico
 
-[X,Y] = meshgrid(-0.5:0.5:10,-0.5:0.5:10);
-Z = (1 -X.^2 -Y.^2).^(1/2)
+% [X,Y] = meshgrid(-0.5:0.5:10,-0.5:0.5:10);
+% Z = (1 -X.^2 -Y.^2).^(1/2)
 
-surf(X,Y,Z);
-xlabel('eixo x'); % legenda no eixo horizontal
-ylabel('eixo y'); % legenda no eixo vertical
-zlabel('eixo z'); % legenda no eixo z
-title('b)'); % título do gráfico
+% surf(X,Y,Z);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% zlabel('eixo z'); % legenda no eixo z
+% title('b)'); % título do gráfico
 
+% [X,Y] = meshgrid(-pi:pi:100,-pi:pi:100);
+% Z = sin(X/2).*cos(Y/3)
+
+% surf(X,Y,Z);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% zlabel('eixo z'); % legenda no eixo z
+% title('c)'); % título do gráfico
+
+% [X,Y] = meshgrid(-8:8:100,-8:8:100);
+% Z = atan(X.^2 + Y.^2)
+
+% surf(X,Y,Z);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% zlabel('eixo z'); % legenda no eixo z
+% title('d)'); % título do gráfico
 
 % -----------------------------------------------------------------
 % Exercício 18
 
+% G = [6.8 8.3 6.1 7.0 7.5 8.2 5.7 5 7.6 8.5 6.2 7.1 9.6 7.8 7.6 6.8 7.2 7.5 8.3 9.3];
 
+% % bar(G)
+
+% qtds = [0 0 0 0 0];
+
+% for i=1:size(G,2)
+%     if(G(i)>=9 && G(i)<=10)
+%         qtds(1) += 1;
+%     else if (G(i)>=8 && G(i)<=8.9)
+%         qtds(2) += 1;
+%     else if (G(i)>=7 && G(i)<=7.9)
+%         qtds(3) += 1;
+%     else if (G(i)>=6 && G(i)<=6.9)
+%         qtds(4) += 1;    
+%     else if (G(i)<6)
+%         qtds(5) += 1;
+%     end
+%     end
+%     end
+%     end
+%     end
+% end
+
+% pie(qtds)
 
 % -----------------------------------------------------------------
 % Exercício 19
 
+% ano_2004 = [2345 4363 3212 4565 8776 7679 6532 2376 2238 4509 5643 1137];
+% ano_2005 = [2343 5766 4534 4719 3422 2200 3454 7865 6543 4508 2312 4566];
+
+% figure
+% name = {'janeiro';'fevereiro';'março';'abril';'maio';'junho';'julho';'agosto';'setembro';'outubro';'novembro';'dezembro'};
+% x = [1:12]; 
+% bar(x,ano_2004)
+% set(gca,'xticklabel',name)
+% rotateXLabels(gca, 45);
+
+% figure
+% name = {'janeiro';'fevereiro';'março';'abril';'maio';'junho';'julho';'agosto';'setembro';'outubro';'novembro';'dezembro'};
+% x = [1:12]; 
+% bar(x,ano_2005)
+% set(gca,'xticklabel',name)
+% rotateXLabels(gca, 45);
 
 
 % -----------------------------------------------------------------
