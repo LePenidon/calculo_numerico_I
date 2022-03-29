@@ -219,21 +219,98 @@
 % -----------------------------------------------------------------
 % Exercício 14
 
+% function f = lista_01(n)
 
+% for i=1:n
+%     disp(i)
+%     a_i = (1+1/i)^i
+% end
 
 % -----------------------------------------------------------------
 % Exercício 15
 
+% function f = lista_01()
+
+% m = input('M: ');
+% n = input('N: ');
+
+% A = zeros(m,n);
+
+% for i=1:m
+%     for j=1:n 
+%         A(i,j) = i^2 - j;
+%     end   
+% end
+
+% A
 
 
 % -----------------------------------------------------------------
 % Exercício 16
 
+% x = linspace(-20,20,100);
+% y = x.^3 - 5.*x + 2
+
+% hold on
+% plot(x,y);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% title('a)'); % título do gráfico
+% hold off
+
+% x = linspace(-2*pi,pi,100);
+% y = sin(x).*cos(x);
+
+% hold on
+% plot(x,y);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% title('b)'); % título do gráfico
+% hold off
+
+% x = linspace(0,20,100);
+% y = cos(e.^x);
+
+% hold on
+% plot(x,y);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% title('c)'); % título do gráfico
+% hold off
+
+% x = linspace(0,10,100);
+
+% pol = [1 0 -5 2];
+% y = polyder(pol)
+
+% hold on
+% plot(x,polyval(y,x));
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% title('d)'); % título do gráfico
+% hold off
 
 
 % -----------------------------------------------------------------
 % Exercício 17
 
+% [X,Y] = meshgrid(-5:5:100,-5:5:100);
+% Z = X.^2 + Y.^2
+
+% mesh(X,Y,Z);
+% xlabel('eixo x'); % legenda no eixo horizontal
+% ylabel('eixo y'); % legenda no eixo vertical
+% zlabel('eixo z'); % legenda no eixo z
+% title('a)'); % título do gráfico
+
+[X,Y] = meshgrid(-0.5:0.5:10,-0.5:0.5:10);
+Z = (1 -X.^2 -Y.^2).^(1/2)
+
+surf(X,Y,Z);
+xlabel('eixo x'); % legenda no eixo horizontal
+ylabel('eixo y'); % legenda no eixo vertical
+zlabel('eixo z'); % legenda no eixo z
+title('b)'); % título do gráfico
 
 
 % -----------------------------------------------------------------
