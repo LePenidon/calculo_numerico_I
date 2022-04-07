@@ -40,11 +40,11 @@
 % E = [1 0 2]
 
 % 2*A
-% % A*E
+% A*E
 % F = B'
 % A.*B
 % E/5
-% % det(B)
+% det(B)
 % sin(A)
 % exp(E)
 % inv(A*A')
@@ -364,15 +364,11 @@
 % name = {'janeiro';'fevereiro';'março';'abril';'maio';'junho';'julho';'agosto';'setembro';'outubro';'novembro';'dezembro'};
 % x = [1:12]; 
 % bar(x,ano_2004)
-% set(gca,'xticklabel',name)
-% rotateXLabels(gca, 45);
 
 % figure
 % name = {'janeiro';'fevereiro';'março';'abril';'maio';'junho';'julho';'agosto';'setembro';'outubro';'novembro';'dezembro'};
 % x = [1:12]; 
 % bar(x,ano_2005)
-% set(gca,'xticklabel',name)
-% rotateXLabels(gca, 45);
 
 
 % -----------------------------------------------------------------
