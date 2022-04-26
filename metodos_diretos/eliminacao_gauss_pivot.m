@@ -17,6 +17,9 @@ function x = eliminacao_gauss_pivot(sub_regressiva,A,b)
     end
 
     x = sub_regressiva(A,b);
+    
+    display(x)
+
 endfunction
 
 function x=sub_regressiva(U,y)

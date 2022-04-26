@@ -20,5 +20,7 @@ function [L,U]=lu_decomp(A)
         end
     end
 
-    L = L
-    U = U
+    display(L)
+    display(U)
+
+endfunction

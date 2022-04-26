@@ -13,6 +13,8 @@ function x = eliminacao_gauss(sub_regressiva,A,b)
     end
 
     x = sub_regressiva(A,b);
+
+    display(x)
 endfunction
 
 function x=sub_regressiva(U,y)
