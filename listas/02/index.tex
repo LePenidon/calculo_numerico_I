@@ -59,7 +59,12 @@ u_{ij} &= a_{ij} - \sum^{i-1}_{k=1}{l_{ik}u_{kj}}
 l_{ij} &= a_{ij} - \frac{\sum^{j-1}_{k=1}{l_{ik}u_{kj}}}{u_{jj}}
 }
 
-Com isso, achamos:
+Ou, também:
+\ea{
+    A = LU \implies \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} = \matriz{p}{1 & 0 & 0 \\ a & 1 & 0 \\ b & c & 1}\matriz{p}{d & e & f \\ 0 & g & g \\ 0 & 0 & i}
+}
+
+Resolvendo a multiplicação de matrizes:
 \ea{
     L = \matriz{p}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}; \quad U = \matriz{p}{4 & -2 & 7 \\ 0 & 3 & -5 \\ 0 & 0 & 1}
 }
@@ -95,11 +100,10 @@ Por 2:
 
 Resolvendo o sistema, achamos:
 \ea{
-    x= 1779 \quad y=\frac{36}{433} \quad z=\frac{801}{433}
+    x= 1, \quad y=2, \quad z=3
 }
 
 }
-
 \newpage
 
 \item a
