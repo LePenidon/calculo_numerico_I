@@ -5,74 +5,123 @@
 \input{basic/capa.tex}
 
 \itensNumeros{
-    \item
-    \itensLetras{
-        \item Seja \ea{
-            A = \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31}.
-        }
-        Para calcular os autovalores de \inLine{A}, temos que resolver:
-        \ea{
-            \det \parenteses{A - \lambda I} &= 0 \\
-        }
-        Ou seja,
-        \ea{
-            \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \lambda \matriz{p}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}} &= 0
-            \\
-            \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \matriz{p}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda }} &= 0
-            \\
-            \det \parenteses{\matriz{p}{4-\lambda & 0 & 0 \\ 0 & -3-\lambda & 0 \\ 0 & 0 & -31-\lambda}} &= 0
-        }
+\item
+\itensLetras{
+\item Seja \ea{
+    A = \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31}.
+}
+Para calcular os autovalores de \inLine{A}, temos que resolver:
+\ea{
+    \det \parenteses{A - \lambda I} &= 0 \\
+}
+Ou seja,
+\ea{
+    \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \lambda \matriz{p}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}} &= 0
+    \\
+    \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \matriz{p}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda }} &= 0
+    \\
+    \det \parenteses{\matriz{p}{4-\lambda & 0 & 0 \\ 0 & -3-\lambda & 0 \\ 0 & 0 & -31-\lambda}} &= 0
+}
 
-        Agora, pelo método de Laplace, temos:
-        \ea{
-            \parenteses{4-\lambda} \cdot \det \parenteses{ \matriz{b}{4}} +
-            \parenteses{-3-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -31-\lambda}} +
-            \\
-            + \parenteses{-31-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -3-\lambda}} = 0
-        }
-        Ou seja,
-        \ea{
-            -\lambda^3 - 30\lambda^3 + 263\lambda + 12 = 0
-        }
-        Resolvendo:
-        \ea{
-            \lambda_1 = -0,04;\ \lambda_2 = 7,12;\ \lambda_3 = -37,08.
-        }
+Agora, pelo método de Laplace, temos:
+\ea{
+    \parenteses{4-\lambda} \cdot \det \parenteses{ \matriz{b}{4}} +
+    \parenteses{-3-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -31-\lambda}} +
+    \\
+    + \parenteses{-31-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -3-\lambda}} = 0
+}
+Ou seja,
+\ea{
+    -\lambda^3 - 30\lambda^3 + 263\lambda + 12 = 0
+}
+Resolvendo:
+\ea{
+    \lambda_1 = -0,04;\ \lambda_2 = 7,12;\ \lambda_3 = -37,08.
+}
 
-        Assim, \inLine{\lambda_1,\lambda_2,\lambda_3} são os autovalores de \inLine{A}.
+Assim, \inLine{\lambda_1,\lambda_2,\lambda_3} são os autovalores de \inLine{A}.
 
+\item A condição para que \inLine{A} seja decomposto em LU, é que o determinante dos menores principais sejam maiores do que 0.
 
+Assim, calculamos:
+\ea{
+    \det \parenteses{\matriz{b}{4}} &= 4
+    \\
+    \det \parenteses{\matriz{b}{4 & -2 \\ 12 & -3}} &= 12
+}
 
-        \item b
+Portanto, \inLine{A} satisfaz as condições da decomposição LU.
 
-        \item c
+\item Sabemos que a decomposição LU é feita pelo método:
+\ea{
+u_{ij} &= a_{ij} - \sum^{i-1}_{k=1}{l_{ik}u_{kj}}
+\\
+l_{ij} &= a_{ij} - \frac{\sum^{j-1}_{k=1}{l_{ik}u_{kj}}}{u_{jj}}
+}
 
-        \item d
+Com isso, achamos:
+\ea{
+    L = \matriz{p}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}; \quad U = \matriz{p}{4 & -2 & 7 \\ 0 & 3 & -5 \\ 0 & 0 & 1}
+}
 
-        \item e
-    }
-    \newpage
+\item Sabemos que:
+\ea{
+\det \parenteses{A} = \Pi ^{n}_{i=1}{u_{ii}} = 4\cdot3\cdot1 = 12
+}
 
-    \item a
-    \newpage
+\item \ea{
+    Ax = b \implies (LU)x = b \implies L(\overbrace{Ux}^{y}) = b
+}
+Faremos da seguinte forma:
+\eal{1}{
+    Ux &= y
+}
+\eal{2}{
+    Ly &= b
+}
 
-    \item a
-    \newpage
+Por 1:
+\ea{
+    \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} \matriz{p}{x \\ y \\ z} = \matriz{p}{4x -2y +7z \\ 3y-5z \\ z}
+}
 
-    \item a
-    \newpage
+Por 2:
+\ea{
+    \matriz{p}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}\matriz{p}{4x -2y +7z \\ 3y-5z \\ z} = \matriz{p}{21 \\ 54 \\ -63}
+    \\
+    \implies
+    \system{4x -2y +7z = 21 \\ 12x -3y +16z = 54 \\ -4x +17y -31z = -63}
+}
 
-    \item a
-    \newpage
+Resolvendo o sistema, achamos:
+\ea{
+    x= 1779 \quad y=\frac{36}{433} \quad z=\frac{801}{433}
+}
 
-    \item a
-    \newpage
+}
 
-    \item a
-    \newpage
+\newpage
 
-    \item a
-    \newpage
+\item a
+\newpage
+
+\item a
+\newpage
+
+\item a
+\newpage
+
+\item a
+\newpage
+
+\item a
+\newpage
+
+\item a
+\newpage
+
+\item a
+\newpage
 
 }
 
