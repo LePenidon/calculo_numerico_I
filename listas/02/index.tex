@@ -4,6 +4,76 @@
 \begin{document}
 \input{basic/capa.tex}
 
+\itensNumeros{
+    \item
+    \itensLetras{
+        \item Seja \ea{
+            A = \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31}.
+        }
+        Para calcular os autovalores de \inLine{A}, temos que resolver:
+        \ea{
+            \det \parenteses{A - \lambda I} &= 0 \\
+        }
+        Ou seja,
+        \ea{
+            \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \lambda \matriz{p}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}} &= 0
+            \\
+            \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \matriz{p}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda }} &= 0
+            \\
+            \det \parenteses{\matriz{p}{4-\lambda & 0 & 0 \\ 0 & -3-\lambda & 0 \\ 0 & 0 & -31-\lambda}} &= 0
+        }
 
+        Agora, pelo método de Laplace, temos:
+        \ea{
+            \parenteses{4-\lambda} \cdot \det \parenteses{ \matriz{b}{4}} +
+            \parenteses{-3-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -31-\lambda}} +
+            \\
+            + \parenteses{-31-\lambda} \cdot \det \parenteses{ \matriz{b}{4-\lambda & 0 \\ 0 & -3-\lambda}} = 0
+        }
+        Ou seja,
+        \ea{
+            -\lambda^3 - 30\lambda^3 + 263\lambda + 12 = 0
+        }
+        Resolvendo:
+        \ea{
+            \lambda_1 = -0,04;\ \lambda_2 = 7,12;\ \lambda_3 = -37,08.
+        }
+
+        Assim, \inLine{\lambda_1,\lambda_2,\lambda_3} são os autovalores de \inLine{A}.
+
+
+
+        \item b
+
+        \item c
+
+        \item d
+
+        \item e
+    }
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+    \item a
+    \newpage
+
+}
 
 \end{document}
