@@ -8,7 +8,7 @@
 \item
 \itensLetras{
 \item Seja \ea{
-    A = \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31}.
+    A = \matriz{b}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31}.
 }
 Para calcular os autovalores de \inLine{A}, temos que resolver:
 \ea{
@@ -16,11 +16,11 @@ Para calcular os autovalores de \inLine{A}, temos que resolver:
 }
 Ou seja,
 \ea{
-    \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \lambda \matriz{p}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}} &= 0
+    \det \parenteses{\matriz{b}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \lambda \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}} &= 0
     \\
-    \det \parenteses{\matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \matriz{p}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda }} &= 0
+    \det \parenteses{\matriz{b}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} - \matriz{b}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda }} &= 0
     \\
-    \det \parenteses{\matriz{p}{4-\lambda & 0 & 0 \\ 0 & -3-\lambda & 0 \\ 0 & 0 & -31-\lambda}} &= 0
+    \det \parenteses{\matriz{b}{4-\lambda & 0 & 0 \\ 0 & -3-\lambda & 0 \\ 0 & 0 & -31-\lambda}} &= 0
 }
 
 Agora, pelo método de Laplace, temos:
@@ -55,12 +55,12 @@ Portanto, \inLine{A} satisfaz as condições da decomposição LU.
 \item Sabemos que a decomposição LU é feita pelo método:
 
 \ea{
-    A = LU \implies \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} = \matriz{p}{1 & 0 & 0 \\ a & 1 & 0 \\ b & c & 1}\matriz{p}{d & e & f \\ 0 & g & g \\ 0 & 0 & i}
+    A = LU \implies \matriz{b}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} = \matriz{b}{1 & 0 & 0 \\ a & 1 & 0 \\ b & c & 1}\matriz{b}{d & e & f \\ 0 & g & g \\ 0 & 0 & i}
 }
 
 Resolvendo a multiplicação de matrizes:
 \ea{
-    L = \matriz{p}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}; \quad U = \matriz{p}{4 & -2 & 7 \\ 0 & 3 & -5 \\ 0 & 0 & 1}
+    L = \matriz{b}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}; \quad U = \matriz{b}{4 & -2 & 7 \\ 0 & 3 & -5 \\ 0 & 0 & 1}
 }
 
 \item Sabemos que:
@@ -81,12 +81,12 @@ Faremos da seguinte forma:
 
 Por 1:
 \ea{
-    \matriz{p}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} \matriz{p}{x \\ y \\ z} = \matriz{p}{4x -2y +7z \\ 3y-5z \\ z}
+    \matriz{b}{4 & -2 & 7 \\ 12 & -3 & 16 \\ -4 & 17 & -31} \matriz{b}{x \\ y \\ z} = \matriz{b}{4x -2y +7z \\ 3y-5z \\ z}
 }
 
 Por 2:
 \ea{
-    \matriz{p}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}\matriz{p}{4x -2y +7z \\ 3y-5z \\ z} = \matriz{p}{21 \\ 54 \\ -63}
+    \matriz{b}{1 & 0 & 0 \\ 3 & 1 & 0 \\ -1 & 5 & 1}\matriz{b}{4x -2y +7z \\ 3y-5z \\ z} = \matriz{b}{21 \\ 54 \\ -63}
     \\
     \implies
     \system{4x -2y +7z = 21 \\ 12x -3y +16z = 54 \\ -4x +17y -31z = -63}
@@ -124,12 +124,12 @@ Resolvendo o sistema, achamos:
 
     \item Sabemos que a decomposição de Choleski é feita pelo método:
     \ea{
-        A = H H^{\intercal} \implies\matriz{b}{4 & 2 & -4 \\ 2 & 10 & 4 \\ -4 & 4 & 9} = \matriz{p}{a & 0 & 0 \\ b & c & 0 \\ d & e & f}\matriz{p}{a & b & d \\ 0 & c & e \\ 0 & 0 & f}
+        A = H H^{\intercal} \implies\matriz{b}{4 & 2 & -4 \\ 2 & 10 & 4 \\ -4 & 4 & 9} = \matriz{b}{a & 0 & 0 \\ b & c & 0 \\ d & e & f}\matriz{b}{a & b & d \\ 0 & c & e \\ 0 & 0 & f}
     }
 
     Resolvendo a multiplicação de matrizes:
     \ea{
-        H = \matriz{p}{\pm 2 & 0 & 0 \\ \pm1 & \pm3 & 0 \\ \mp2 & \pm2 & \pm1};
+        H = \matriz{b}{\pm 2 & 0 & 0 \\ \pm1 & \pm3 & 0 \\ \mp2 & \pm2 & \pm1};
     }
 
 
@@ -152,12 +152,12 @@ Resolvendo o sistema, achamos:
 
     Por 1:
     \ea{
-        \matriz{b}{4 & 2 & -4 \\ 2 & 10 & 4 \\ -4 & 4 & 9} \matriz{p}{x \\ y \\ z} = \matriz{p}{2x +y -2z \\ 3y+2z \\ z}
+        \matriz{b}{4 & 2 & -4 \\ 2 & 10 & 4 \\ -4 & 4 & 9} \matriz{b}{x \\ y \\ z} = \matriz{b}{2x +y -2z \\ 3y+2z \\ z}
     }
 
     Por 2:
     \ea{
-        \matriz{p}{2 & 0 & 0 \\ 1 & 3 & 0 \\ -2 & 2 & 1}\matriz{p}{2x +y -2z \\ 3y+2z \\ z} = \matriz{p}{0 \\ 6 \\ 5}
+        \matriz{b}{2 & 0 & 0 \\ 1 & 3 & 0 \\ -2 & 2 & 1}\matriz{b}{2x +y -2z \\ 3y+2z \\ z} = \matriz{b}{0 \\ 6 \\ 5}
         \\
         \implies
         \system{4x +2y -4z &= 0 \\ 2x +10y +4z &= 6 \\ -4x +4y +5z &= 15}
@@ -249,7 +249,7 @@ Resolvendo o sistema, achamos:
     }
     Portanto:
     \ea{
-        L = \matriz{p}{1 & 0 & 0 \\ \frac{-1}{4} & 1 & 0 \\ \frac{3}{4} & \frac{1}{5} & 1}; \quad U = \matriz{b}{-4 & 2 & 5 \\ 0 & \frac{-9}{2} & \frac{9}{4} \\ 0 & 0 & 3}
+        L = \matriz{b}{1 & 0 & 0 \\ \frac{-1}{4} & 1 & 0 \\ \frac{3}{4} & \frac{1}{5} & 1}; \quad U = \matriz{b}{-4 & 2 & 5 \\ 0 & \frac{-9}{2} & \frac{9}{4} \\ 0 & 0 & 3}
     }
 
 }
@@ -299,10 +299,40 @@ Resolvendo o sistema, achamos:
 }
 \newpage
 
-\item a
+\item Temos a matriz
+\ea{
+    A = \matriz{b}{0 & 4 & 6 \\ 1 & -3 & -1 \\ 2 & 1 & 1}
+}
+
+De início,
+\ea{
+    P = \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}; \quad L = \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1}
+}
+Fazemos: \inLine{L_2 = L_1} e \inLine{L_1 = L_2}
+\ea{
+    A = \matriz{b}{1 & -3 & -1 \\ 0 & 4 & 6 \\ 2 & 1 & 1}\quad P = \matriz{b}{0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1}
+}
+Fazemos: \inLine{L_3 = L_3 - 2L_1}
+\ea{
+    A = \matriz{b}{1 & -3 & -1 \\ 0 & 4 & 6 \\ 0 & 7 & 3} \quad L = \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 2 & 0 & 1}
+}
+Fazemos: \inLine{L_3 = L_3 - \frac{7}{4}L_2}
+\ea{
+    A = \matriz{b}{1 & -3 & -1 \\ 0 & 4 & 6 \\ 0 & 0 & \frac{-15}{2}} \quad L = \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 2 & \frac{7}{4} & 1}
+}
+Então, \inLine{P A = L U \implies}
+\ea{
+    \matriz{b}{0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1}\matriz{b}{0 & 4 & 6 \\ 1 & -3 & -1 \\ 2 & 1 & 1} = \matriz{b}{1 & 0 & 0 \\ 0 & 1 & 0 \\ 2 & \frac{7}{4} & 1}\matriz{b}{1 & -3 & -1 \\ 0 & 4 & 6 \\ 0 & 0 & \frac{-15}{2}}
+}
 \newpage
 
-\item a
+\item
+
+
+
+
+
+
 \newpage
 
 \item a
