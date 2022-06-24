@@ -326,21 +326,52 @@ Então, \inLine{P A = L U \implies}
 }
 \newpage
 
+\item \itensLetras{
+    \item São diagonalizáveis as matrizes: \inLine{B,C}, como veremos no item \inLine{b)}.
+    \item \inLine{A: }
+    \ea{
+        \det \parenteses{\matriz{b}{3 & 1 \\ 0 & 3} - \matriz{b}{\lambda  & 0 \\ 0 & \lambda}} = 0 \implies \matriz{v}{3-\lambda & 1 \\ 0 & 3-\lambda} = 0
+    }
+    Então,
+    \ea{
+        \parenteses{3-\lambda}^2 = 0 \implies \lambda_1 = \lambda_2 = 3
+    }
+    \inLine{B: }
+    \ea{
+        \det \parenteses{\matriz{b}{1 & 5 \\ 5 & -1} - \matriz{b}{\lambda  & 0 \\ 0 & \lambda}} = 0 \implies \matriz{v}{1-\lambda & 5 \\ 5 & -1-\lambda} = 0
+    }
+    Então,
+    \ea{
+        \lambda^2 - 26 = 0 \implies \lambda_1 = -\sqrt{26}\quad \lambda_2 = \sqrt{26}
+    }
+    \inLine{C: }
+    \ea{
+        \det \parenteses{\matriz{b}{-1 & 2 \\ 1 & -1} - \matriz{b}{\lambda  & 0 \\ 0 & \lambda}} = 0 \implies \matriz{v}{-1-\lambda & 2 \\ 1 & -1-\lambda} = 0
+    }
+    Então,
+    \ea{
+        \lambda^2+2\lambda - 1 = 0 \implies \lambda_1 = -\sqrt{2}-1,\quad \lambda_2 = \sqrt{2}-1
+    }
+
+    \item a
+}
+
+\newpage
+
 \item
-
-
-
-
-
-
+\ea{
+    \det \parenteses{\matriz{b}{11 & -8 & 4 \\ -8 & -1 & -2 \\ 4 & -2 & -4} - \matriz{b}{\lambda  & 0 & 0 \\ 0 & \lambda & 0 \\ 0 & 0 & \lambda}} &= 0 \implies
+    \\
+    \matriz{v}{11-\lambda & -8 & 4 \\ -8 & -1-\lambda & -2 \\ 4 & -2 & -4-\lambda} &= 0 \implies
+    \\
+    -\lambda^3 + 6\lambda^2+135\lambda + 400 = 0
+}
+Resolvendo,
+\ea{
+    \lambda_1 = 16, \quad \lambda_2 = -5
+}
+Assim, a matriz \inLine{J} não é diagonalizável.
 \newpage
-
-\item a
-\newpage
-
-\item a
-\newpage
-
 }
 
 \end{document}
