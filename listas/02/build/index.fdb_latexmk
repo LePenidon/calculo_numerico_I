@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1656192130 "/home/penido/Documents/programacao/_github/calculo_numerico_I/listas/02/index.tex" "build/index.pdf" "index" 1656192131
+["pdflatex"] 1656193791 "/home/penido/Documents/programacao/_github/calculo_numerico_I/listas/02/index.tex" "build/index.pdf" "index" 1656193792
   "/etc/texmf/web2c/texmf.cnf" 1651251172 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/penido/Documents/programacao/_github/calculo_numerico_I/listas/02/index.tex" 1656192129 11148 734d7d3d1317fcb446e7e17374ce981e ""
+  "/home/penido/Documents/programacao/_github/calculo_numerico_I/listas/02/index.tex" 1656193791 11148 7c03fe3c4675ad8125079719fddb4ce8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1136768653 3584 13049b61b922a28b158a38aeff75ee9b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx2488.tfm" 1136768653 3584 0181dbc4d429c3ba4e30feba37b5df96 ""
@@ -242,9 +242,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1651251401 2801435 6b81b442910e1ddb3393eb665c022009 ""
   "basic/capa.tex" 1655936279 584 7eebf9a1cff52da3b5fae95183e40bac ""
   "basic/pacotes_comandos.tex" 1655936279 9065 47c4c2b331fcb87f7cb3e9182a60695c ""
-  "build/index.aux" 1656192130 786 cf162019fac99a1d65a420e10f5bc12e "pdflatex"
-  "build/index.out" 1656192130 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "index.tex" 1656192129 11148 734d7d3d1317fcb446e7e17374ce981e ""
+  "build/index.aux" 1656193792 786 cf162019fac99a1d65a420e10f5bc12e "pdflatex"
+  "build/index.out" 1656193792 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "index.tex" 1656193791 11148 7c03fe3c4675ad8125079719fddb4ce8 ""
   (generated)
   "build/index.aux"
   "build/index.log"
